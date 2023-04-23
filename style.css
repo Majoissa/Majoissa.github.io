@@ -57,12 +57,13 @@ header img:hover{
 }
 
 .aboutMe {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 1.5vw;
   text-align: justify;
   position: static;
   margin-left: 15%;
   margin-right: 5%;
+  line-height: 2.3vw;;
 }
 
 
@@ -74,19 +75,13 @@ header img:hover{
     font-size: 2.5vw;
     margin-left: 4%;
  }
-
- .proyectos {
-  display: flex;
-  flex-wrap: wrap;
-  height: fit-content; 
-  }
   
   .project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%; 
-  gap: 2.0vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
   }
   
   .project {
@@ -171,4 +166,41 @@ font-weight: bold;
 .contact img{
   width: 4vw;
   padding-bottom: 2%;
+}
+
+@media (max-width: 900px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project {
+    width: 80vw;
+    max-width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+  
+
+.titulo{
+  font-size: 4vw;
+  max-width: 80%;
+}
+
+.proyectos h2{
+  font-size: 4vw;
+  max-width: 30%;
+}
+
+.project h3, .project p, .project a{
+  font-size: 3vw;
+  line-height: 4vw;
+}
+
+p{
+  font-size: 2.3vw;
+  line-height: 3.5vw;
+}
 }
