@@ -57,13 +57,14 @@ header img:hover{
 }
 
 .aboutMe {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.5vw;
+  font-family:'Quicksand Light', sans-serif;
+  font-size: 1.3vw;
+  font-weight: 500;
   text-align: justify;
   position: static;
   margin-left: 15%;
   margin-right: 5%;
-  line-height: 2.3vw;;
+  line-height: 2.3vw;
 }
 
 
@@ -80,12 +81,13 @@ header img:hover{
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
-  max-width: 90%;
+  max-width: 86%;
   margin: auto;
   }
   
   .project {
   width: 40vw;
+  height: 40vw;
   box-sizing: border-box;
   background-color: #1A1B2D;
   border-radius: 0.26vw;
@@ -115,9 +117,9 @@ header img:hover{
 }
 
 .project p{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Quicksand Light', sans-serif;
   color: #FFED90;
-  line-height: 1.5vw;
+  line-height: 1.8vw;
   font-size: 1vw;
   text-align: justify;
   text-shadow: 0 0 0.6vw rgba(0, 0, 0, 0.5);
@@ -166,4 +168,54 @@ font-weight: bold;
 .contact img{
   width: 4vw;
   padding-bottom: 2%;
+}
+
+@media (max-width: 900px) {
+.head{
+  grid-template-columns: auto;
+  gap: 10px;
+}
+
+  .project-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project {
+    width: 60vw;
+    max-width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+  
+
+.titulo{
+  font-size: 4vw;
+  max-width: 80%;
+}
+
+.proyectos h2{
+  font-size: 4vw;
+  max-width: 30%;
+}
+
+.project h3, .project p, .project a{
+  font-size: 2.5vw;
+  line-height: 4vw;
+}
+
+p{
+  font-size: 1.8vw;
+}
+
+.contacto{
+  font-size: 4vw;
+  max-width: 30%;
+}
+
+.contact img{
+  width: 5vw;
+}
 }
