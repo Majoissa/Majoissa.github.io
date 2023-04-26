@@ -198,6 +198,10 @@ font-weight: bold;
   line-height: 4vw;
 }
 
+.project a:hover{
+  font-size: 2.5vw;
+}
+
 .aboutMe{
   font-size: 2.3vw;
   margin-bottom: 3vw;
