@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $message = $_POST["message"];
 
   $to = "issamariajose@gmail.com";
-  $subject = "Nuevo mensaje de contacto";
+  $subject = "Nuevo mensaje de contacto de la pagina de github";
 
   $body = "Nombre: " . $name . "\n";
   $body .= "Correo electrónico: " . $email . "\n";
