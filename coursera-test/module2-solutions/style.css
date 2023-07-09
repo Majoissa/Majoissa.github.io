@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+  font-family: "Comic Sans MS", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.chicken {
+  background-color: pink;
+  border: 2px solid black;
+  margin-top: -20px;
+  margin-left: 76%;
+  width: 29%;
+  text-align: center;
+}
+.beef {
+  background-color: #f66a6a;
+  border: 2px solid black;
+  margin-top: -20px;
+  margin-left: 76%;
+  width: 29%;
+  text-align: center;
+}
+.sushi {
+  background-color: #f6eb6a;
+  border: 2px solid black;
+  margin-top: -20px;
+  margin-left: 82%;
+  width: 20%;
+  text-align: center;
+}
+main {
+  max-width: 90%;
+  margin: auto;
+}
+.section1,
+.section2,
+.section3 {
+  width: 25%;
+  float: left;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: lightgray;
+  border: 2px solid black;
+}
+
+/* Estilos para la versión de tableta */
+@media screen and (max-width: 991px) {
+  .section1,
+  .section2 {
+    width: 40%;
+  }
+
+  .section3 {
+    width: 90%;
+  }
+}
+
+/* Estilos para la versión móvil */
+@media screen and (max-width: 767px) {
+  .section1,
+  .section2,
+  .section3 {
+    width: 90%;
+  }
+  .chicken {
+    background-color: pink;
+    border: 2px solid black;
+    margin-top: -20px;
+    margin-left: 74%;
+    width: 29%;
+    text-align: center;
+  }
+  .beef {
+    background-color: #f66a6a;
+    border: 2px solid black;
+    margin-top: -20px;
+    margin-left: 74%;
+    width: 29%;
+    text-align: center;
+  }
+  .sushi {
+    background-color: #f6eb6a;
+    border: 2px solid black;
+    margin-top: -20px;
+    margin-left: 74%;
+    width: 29%;
+    text-align: center;
+  }
+}
